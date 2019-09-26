@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fjalla One", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #1C262F;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header nav ul li a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+  transition: color 0.5s;
+}
+header nav ul li a:hover {
+  color: #ccc;
+}
+header nav ul li.standout {
+  background: #fff;
+  margin-right: 1rem;
+  transition: background-color 0.5s;
+}
+header nav ul li.standout:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+header nav ul li.standout a {
+  color: #1C262F;
+}
+header nav ul li.standout a:hover {
+  color: #000;
+}
+header nav .logo {
+  max-width: 120px;
+}
+header nav .logo a {
+  padding: 0;
+}
+header nav .logo img {
+  display: block;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

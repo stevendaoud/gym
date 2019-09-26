@@ -1,0 +1,47 @@
+<header>
+    <nav> 
+        <ul>
+            <li class="logo">
+                <a href="/"><img src="img/logo.png" alt="Urban Strength Institute Logo"/></a>
+            </li>
+           
+            <li>
+                <a href="/testimonials">Testimonials</a>
+            </li>
+            <li>
+                <a href="/contact">Contact US</a>
+            </li>
+            <li>
+                <a href="/blog">Blog</a>
+            </li>
+            <li>
+                <a href="/store">Store</a>
+            </li>
+        </ul>
+
+
+        {{#if user.email}}
+            <ul>
+                <li class="standout">
+                    <a href="/profile">{{user.name}}'s Profile</a>
+                </li>
+                <li>
+                    <a href="/logout">Logout</a>
+                </li>
+            </ul>
+        {{else}}
+            <ul>
+                <li class="login">
+                    <a href="/register">Register</a>
+                </li>
+                <li class="register">
+                    <a href="/login">Login</a>
+                </li>
+                 <li class="standout">
+                    <a href="/appointments">Book an Appointment</a>
+                </li>
+            </ul>
+        {{/if}}
+
+    </nav>
+</header>
