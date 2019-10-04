@@ -94,6 +94,8 @@ header nav .mobile-trigger {
 header nav .mobile-trigger button {
   background: none;
   border: none;
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 767px) {
   header nav .mobile-trigger {
@@ -113,6 +115,32 @@ header nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+@media (max-width: 767px) {
+  header nav ul.logo-container {
+    justify-content: flex-start;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  header nav ul.logo-container li {
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0;
+  }
+  header nav ul.logo-container li:nth-child(1) {
+    width: 40px;
+    align-items: left;
+  }
+  header nav ul.logo-container li:nth-child(1) svg {
+    display: block;
+    width: 40px;
+  }
+  header nav ul.logo-container li:nth-child(2) {
+    width: 100px;
+  }
 }
 header nav ul li a {
   display: block;
@@ -145,15 +173,21 @@ header nav ul li.standout a:hover {
   color: #000;
 }
 @media (max-width: 767px) {
+  header nav ul li.standout {
+    width: 180px;
+    margin: 0;
+  }
   header nav ul li.standout a {
     font-size: 0.8rem;
     font-weight: bold;
     padding: 1rem 0.5rem;
+    letter-spacing: 0;
+    text-align: center;
   }
 }
 @media (max-width: 460px) {
   header nav ul li.standout a {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 767px) {
@@ -181,12 +215,12 @@ header nav .logo img {
 }
 @media (max-height: 700px) {
   .home .intro {
-    font-size: 10px;
+    font-size: 1px;
   }
 }
 @media (max-width: 639px) {
   .home .intro {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 @media (max-height: 500px) {
@@ -278,6 +312,11 @@ header nav .logo img {
   -ms-transform: translate(0%, -130%);
   -webkit-transform: translate(0%, -130%);
   transform: translate(0%, -130%);
+}
+@media (max-width: 767px) {
+  .home .intro .content .book a {
+    font-size: 1.2em;
+  }
 }
 .home .about {
   background: #F84614;

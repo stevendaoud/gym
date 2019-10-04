@@ -15,6 +15,8 @@ header{
             button{
                 background:none;
                 border:none;
+                margin:0;
+                padding:0;
             }
 
             @media(max-width:767px){
@@ -38,7 +40,35 @@ header{
             align-items: center;
 
             &.logo-container{
-                @media(max-width:767px){}
+                
+                @media(max-width:767px){
+                    justify-content: flex-start;
+                    width:200px;
+   
+                    margin:0;
+                    padding:0;
+                    text-align: left;
+                    flex-wrap: wrap;
+                    li{
+                        
+                        justify-content: flex-start;
+                        text-align: left;
+                        padding:0;
+                        &:nth-child(1){
+                            width:40px;
+                            align-items: left;
+                            svg{
+                                display: block;
+                              
+                                width:40px;
+                            }
+                        }
+
+                        &:nth-child(2){
+                            width:100px;
+                        }
+                    }
+                }
             }
            
 
@@ -63,6 +93,7 @@ header{
                     background:$white;
                     margin-right:1rem;
                     transition:background-color 0.5s;
+
                     &:hover{
                         background:rgba(255, 255, 255, 0.8);
                     }
@@ -76,16 +107,20 @@ header{
                     margin-right:0.5rem;
 
                     @media(max-width:767px){
+                        width:180px;
+                        margin:0;
                         a{
                             font-size:0.8rem;
                             font-weight: bold;
                             padding:1rem 0.5rem;
+                            letter-spacing: 0;
+                            text-align: center;
                         }
                     }
 
                     @media(max-width:460px){
                         a{
-                            font-size:0.6rem;
+                            font-size:0.75rem;
                         }
                     }
 
