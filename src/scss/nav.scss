@@ -1,6 +1,9 @@
 header{
-
-    background:$tealBlue;
+    position: fixed;
+    width:100%;
+    background: $tealBlue;
+    z-index: 10000;
+    top:0;
 
     nav{
         width:100%;
@@ -52,7 +55,7 @@ header{
         .logo{
             max-width:120px;
             a{
-                padding:0;
+                padding:1rem;
             }
             img{
                 display: block;

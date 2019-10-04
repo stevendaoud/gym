@@ -2,25 +2,14 @@
     <nav> 
         <ul>
             <li class="logo">
-                <a href="/"><img src="img/logo.png" alt="Urban Strength Institute Logo"/></a>
+                <a href="/"><img src="img/logo_white.png" alt="Urban Strength Institute Logo"/></a>
             </li>
            
-            <li>
-                <a href="/testimonials">Testimonials</a>
-            </li>
-            <li>
-                <a href="/contact">Contact US</a>
-            </li>
-            <li>
-                <a href="/blog">Blog</a>
-            </li>
-            <li>
-                <a href="/store">Store</a>
-            </li>
+           
         </ul>
 
 
-        {{#if user.email}}
+        {{!-- {{#if user.email}}
             <ul>
                 <li class="standout">
                     <a href="/profile">{{user.name}}'s Profile</a>
@@ -29,19 +18,32 @@
                     <a href="/logout">Logout</a>
                 </li>
             </ul>
-        {{else}}
+        {{else}} --}}
             <ul>
-                <li class="login">
+                {{!-- <li class="login">
                     <a href="/register">Register</a>
                 </li>
                 <li class="register">
                     <a href="/login">Login</a>
-                </li>
+                </li> --}}
+            <li>
+                <a href="/contact">Contact</a>
+            </li>
+            <li>
+                <a href="/testimonials">Testimonials</a>
+            </li>
+           
+            <li>
+                <a href="/blog">Blog</a>
+            </li>
+            <li>
+                <a href="/store">Store</a>
+            </li>
                  <li class="standout">
                     <a href="/appointments">Book an Appointment</a>
                 </li>
             </ul>
-        {{/if}}
+        {{!-- {{/if}} --}}
 
     </nav>
 </header>

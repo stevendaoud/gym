@@ -14,6 +14,7 @@ const db = mongoose.connection;
 module.exports = (app)=> {
     
     router.get("/", function(req, res) {
+        console.log('here')
         res.render('home', {user : req.user})
     });
 

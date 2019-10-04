@@ -15,3 +15,75 @@ h1, h2, h3, h4, h5, h6{
     margin:0;
     padding:0;
 }
+
+body{
+    padding-top:76px;
+}
+
+
+
+.book-btn,
+.learn-btn{
+
+    display: block;
+    padding:1rem;
+    color:$white;
+    text-decoration: none;
+    font-size:1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+    transition:all 0.5s;
+    text-align: center;
+ 
+
+}
+
+.book-btn{
+    background:$orange;
+    margin-right:1rem;
+    &:hover{
+        opacity:0.75;
+    }
+}
+
+.book{
+    display: flex;
+    width:100%;
+    padding-top:1em;
+    position: relative;
+}
+
+.graph-wrapper{
+    position: relative;
+}
+
+.learn-btn{
+    color:$black;
+    background:$white;
+
+    border:2px rgba(0, 0, 0, 0.25) solid;
+
+    &:hover{
+        border:2px rgba(0, 0, 0, 0.75) solid;
+    }
+}
+
+.flex-wrap{
+    display: flex;
+    max-width:1600px;
+    margin:0 auto;
+
+    .left, .right{
+        position: relative;
+    }
+
+    .left{
+        width:50%;
+    }
+
+    .right{
+        width:50%;
+    }
+
+}

@@ -35,7 +35,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.engine("handlebars", exphbs({ 
     defaultLayout: "main"
-    // ,helpers: {
+    // , helpers: {
     //     copyrightYear: function() {
 
     //        return router.get("/", function(req, res) {
