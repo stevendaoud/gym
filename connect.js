@@ -1,5 +1,5 @@
 module.exports = () => {
-    mongoose.connect('mongodb://localhost/loginapp');
+    mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/loginapp');
     var db = mongoose.connection;
     return db;
 }
