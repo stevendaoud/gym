@@ -68,16 +68,25 @@ header{
                     }
                    a{ 
                        color:$tealBlue;
-                     
+                       text-align: center;
                        &:hover{
                          color:$black;
                        }
+                    }
+                    margin-right:0.5rem;
 
-                       @media(max-width:767px){
+                    @media(max-width:767px){
+                        a{
                             font-size:0.8rem;
                             font-weight: bold;
+                            padding:1rem 0.5rem;
                         }
+                    }
 
+                    @media(max-width:460px){
+                        a{
+                            font-size:0.6rem;
+                        }
                     }
 
                    
@@ -88,6 +97,11 @@ header{
                     @media(max-width:767px){
                         display: none;
                     }
+
+                    &.open{
+        
+                    }
+
                 }
     
 

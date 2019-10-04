@@ -132,12 +132,14 @@ header nav ul li.standout {
   background: #fff;
   margin-right: 1rem;
   transition: background-color 0.5s;
+  margin-right: 0.5rem;
 }
 header nav ul li.standout:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 header nav ul li.standout a {
   color: #111;
+  text-align: center;
 }
 header nav ul li.standout a:hover {
   color: #000;
@@ -146,6 +148,12 @@ header nav ul li.standout a:hover {
   header nav ul li.standout a {
     font-size: 0.8rem;
     font-weight: bold;
+    padding: 1rem 0.5rem;
+  }
+}
+@media (max-width: 460px) {
+  header nav ul li.standout a {
+    font-size: 0.6rem;
   }
 }
 @media (max-width: 767px) {
