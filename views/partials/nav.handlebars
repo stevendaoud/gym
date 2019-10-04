@@ -1,11 +1,12 @@
 <header>
     <nav> 
-        <ul>
+        <ul class="logo-container">
+            <li class="mobile-trigger">
+                    <button><img src="img/hamburger.svg" class="svg" alt="Hamburger Icon"/></button>
+                </li>
             <li class="logo">
-                <a href="/"><img src="img/logo_white.png" alt="Urban Strength Institute Logo"/></a>
+                <a href="/"><img src="img/usi_logo.svg" class="svg" alt="Urban Strength Institute Logo"/></a>
             </li>
-           
-           
         </ul>
 
 
@@ -20,26 +21,29 @@
             </ul>
         {{else}} --}}
             <ul>
-                {{!-- <li class="login">
-                    <a href="/register">Register</a>
+                
+                <li class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="/contact">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="/testimonials">Testimonials</a>
+                        </li>
+
+                        <li>
+                            <a href="/blog">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="/store">Store</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="register">
-                    <a href="/login">Login</a>
-                </li> --}}
-            <li>
-                <a href="/contact">Contact</a>
-            </li>
-            <li>
-                <a href="/testimonials">Testimonials</a>
-            </li>
-           
-            <li>
-                <a href="/blog">Blog</a>
-            </li>
-            <li>
-                <a href="/store">Store</a>
-            </li>
-                 <li class="standout">
+               
+
+                <li class="standout">
                     <a href="/appointments">Book an Appointment</a>
                 </li>
             </ul>

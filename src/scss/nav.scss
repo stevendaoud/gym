@@ -9,12 +9,38 @@ header{
         width:100%;
         display: flex;
         justify-content: space-between;
+
+        .mobile-trigger{
+            display: none;
+            button{
+                background:none;
+                border:none;
+            }
+
+            @media(max-width:767px){
+                display: block;            
+            }
+        }
+
+        svg{
+            fill:$white;
+            display: block;
+            width:100%;
+            max-width:120px;
+        }
+
         ul{
             margin:0;
             padding:0;
             list-style-type:none;
             display: flex;
+            flex-direction: row;
             align-items: center;
+
+            &.logo-container{
+                @media(max-width:767px){}
+            }
+           
 
             li{
                 a{
@@ -46,8 +72,24 @@ header{
                        &:hover{
                          color:$black;
                        }
+
+                       @media(max-width:767px){
+                            font-size:0.8rem;
+                            font-weight: bold;
+                        }
+
+                    }
+
+                   
+                }
+
+                &.main-nav{
+                
+                    @media(max-width:767px){
+                        display: none;
                     }
                 }
+    
 
             }
         }
