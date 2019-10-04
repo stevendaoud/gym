@@ -8,7 +8,7 @@ const passport = require('passport');
 const User = require('../models/user')
 const router = express.Router();
 
-mongoose.connect('mongodb://localhost/loginapp');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/loginapp');
 const db = mongoose.connection;
 
 module.exports = (app)=> {
