@@ -461,12 +461,75 @@ header nav .logo img {
     margin-top: 0;
   }
 }
-.peformance-data .contact iframe {
+
+.contact .flex-wrap {
+  max-width: 100%;
+  padding: 4rem 2rem 4rem 0;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .contact .flex-wrap {
+    padding: 0;
+  }
+}
+.contact iframe {
   width: 100%;
+  height: 100%;
   display: block;
 }
-.peformance-data .contact .left, .peformance-data .contact .right {
+.contact .left, .contact .right {
   width: 50%;
+}
+@media (max-width: 600px) {
+  .contact .left, .contact .right {
+    width: 100%;
+  }
+  .contact .left .hours-table, .contact .right .hours-table {
+    text-align: center;
+  }
+  .contact .left .hours, .contact .right .hours {
+    text-align: left;
+    display: inline-block;
+  }
+  .contact .left .book, .contact .right .book {
+    justify-content: center;
+  }
+}
+.contact .right {
+  max-width: 800px;
+  padding-left: 4rem;
+}
+@media (max-width: 767px) {
+  .contact .right {
+    padding: 1rem;
+  }
+}
+.contact .right h1 {
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.contact .right h1 svg {
+  width: 100%;
+  max-width: 200px;
+}
+.contact .right strong {
+  font-weight: bold;
+}
+.contact .right small {
+  display: block;
+  color: #F84614;
+  text-transform: lowercase;
+  font-size: 1rem;
+}
+.contact .right .hours {
+  padding: 2rem 0;
+}
+.contact .right .hours strong {
+  display: inline-block;
+  width: 7rem;
+}
+.contact .right .hours > div {
+  padding-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
